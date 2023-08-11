@@ -14,8 +14,8 @@ if today in birthday_dict:
     print("found\n")
     letter = letter_file.read()
     letter = letter.replace("[NAME]", birthday_dict[today]["name"])
-  my_email="harshitabhambhani7@gmail.com"
-  password="ghscoscpbfycbmoh"
+  my_email="your mail@gmail.com"
+  password="your password"
   with smtplib.SMTP("smtp.gmail.com",port=587) as connection :
     connection.starttls()
     connection.login(user=my_email,password=password)
